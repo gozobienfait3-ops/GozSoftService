@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nos Services Soft Service</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a>
+              <a href="à propos.html">À propos</a>
+               <a href="description.html">Services</a>
+           <a href="realisations.html">Nos réalisations</a>
+		<a href="Contact & support.html">Contact</a>
+          
+        </nav>
+        <h2>Nos Programmes de Formation</h2>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <p>Découvrez nos parcours d'apprentissage conçus pour faire de vous un expert du numérique. Visionnez nos démonstrations et choisissez la spécialité qui propulsera votre carrière.</p>
+        </section>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="video-box">
+                    <video controls>
+                        <source src="images/reseau.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="service-info">
+                    <h3>Infrastructure & Réseaux</h3>
+                    <p>Maîtrisez l'installation de routeurs, la configuration LAN/MAN et le déploiement d'antennes VSAT pour interconnecter les entreprises.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="video-box">
+                    <video controls>
+                        <source src="images/prog.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="service-info">
+                    <h3>Génie Logiciel & Web</h3>
+                    <p>Apprenez à concevoir des applications desktop et mobiles. Devenez développeur full-stack avec les langages les plus demandés.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="contact-section">
+            <div class="contact-header">
+                <h3>Prêt à nous rejoindre ?</h3>
+                <p>Laissez-nous un message pour une orientation personnalisée ou pour réserver votre place.</p>
+            </div>
+            
+            <form action="traitement.php" method="POST" class="pro-form">
+                <div class="form-group">
+                    <label>Adresse E-mail professionnel</label>
+                    <input type="email" name="email" placeholder="nom@exemple.com" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Téléphone (WhatsApp)</label>
+                        <input type="tel" name="phone" placeholder="+243 ...">
+                    </div>
+                    <div class="form-group">
+                        <label>Domaine souhaité</label>
+                        <select name="domaine">
+                            <option>Réseau Informatique</option>
+                            <option>Programmation</option>
+                            <option>Maintenance</option>
+                            <option>Bureautique</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Votre projet ou préoccupation</label>
+                    <textarea name="message" rows="5" placeholder="Expliquez-nous brièvement votre besoin..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Envoyer ma demande</button>
+                <a href="à propos.html" class="link-back">← Retour à la présentation</a>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gozo Soft Service - Excellence en Formation Informatique</p>
+    </footer>
+</body>
+</html>
